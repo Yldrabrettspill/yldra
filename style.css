@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+* {
+    font-family: "Gluten", cursive;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.overskrift {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(247, 243, 243);
+}
+
+.overskrift2 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30pt;
+    color: rgb(217, 217, 217);
+}
+
+.overskrift3 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30pt;
+    color: rgb(246, 248, 249);
+}
+
+
+.overskrift4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    font-size: 60pt;
+    color: rgb(224, 226, 242);
+}
+
+
