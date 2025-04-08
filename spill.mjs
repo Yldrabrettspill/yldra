@@ -59,11 +59,11 @@ function Regler() {
     const image1 = new Blocks.Image("bilder/yldra.png", { x: 300, y: 70, width: 500, height: 500 })
     
     Actions.Click(start, () => {
-        lyd.stop();
+        
         GaaTil(scene2);
     })
 
-    Actions.Click(image, () => {
+    Actions.Click(image1, () => {
         lyd.stop();
         GaaTil(scene2);
     })
