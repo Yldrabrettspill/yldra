@@ -53,22 +53,26 @@ function Velkommen() {
 
 }
 function Regler() {
+    const lyd = new Blocks.Sound("lydfiler/Yldraintroogregler.mp3", {loop:false, auto:true})
     const image = new Blocks.Image(bakgrunnsbilde, { x: 0, y: 0, width: breddeIpad, height: høydeIpad })
     const start = new Blocks.Text("Regler", { style: "overskrift", x: 400, y: 500, width: 100, height: 100 });
     const image1 = new Blocks.Image("bilder/yldra.png", { x: 300, y: 70, width: 500, height: 500 })
     
     Actions.Click(start, () => {
+        lyd.stop();
         GaaTil(scene2);
     })
 
     Actions.Click(image, () => {
+        lyd.stop();
         GaaTil(scene2);
     })
 
     Actions.Click(image1, () => {
-        GaaTil(lyd);
+        lyd.start();
+        //GaaTil(lyd);
     })
-    const lyd = new Blocks.Sound("lydfiler/Spmkort1.mp3", {loop:false, auto:true})
+   
 }
 
 function scene2() {
@@ -148,7 +152,7 @@ const tekst = new Blocks.Text(tekstRandom, { style: "overskrift3", x: 375, y: 60
 function utfordringsscene() {
 
     visKort(utfkort);
-    const tekst = new Blocks.Text(tekstRandom, { style: "overskrift3", x: 100, y: 450, width: 500, height: 500 });
+    const tekst = new Blocks.Text(tekstRandom, { style: "overskrift3", x: 300, y: 550, width: 300, height: 300 });
     const image1 = new Blocks.Image("bilder/tilbake.png", { x: 25, y: 25, width: 100, height: 100 })
     Actions.Click(image1, () => {
         GaaTil(scene2);
