@@ -54,23 +54,23 @@ function Velkommen() {
 }
 function Regler() {
     const lyd = new Blocks.Sound("lydfiler/Yldraintroogregler.mp3", {loop:false, auto:true})
-    const image = new Blocks.Image(bakgrunnsbilde, { x: 0, y: 0, width: breddeIpad, height: høydeIpad })
+    const bakgrunn = new Blocks.Image(bakgrunnsbilde, { x: 0, y: 0, width: breddeIpad, height: høydeIpad })
     const start = new Blocks.Text("Regler", { style: "overskrift", x: 400, y: 500, width: 100, height: 100 });
-    const image1 = new Blocks.Image("bilder/yldra.png", { x: 300, y: 70, width: 500, height: 500 })
+    const yldra = new Blocks.Image("bilder/yldra.png", { x: 300, y: 70, width: 500, height: 500 })
     
     Actions.Click(start, () => {
-        
-        GaaTil(scene2);
-    })
-
-    Actions.Click(image1, () => {
         lyd.stop();
         GaaTil(scene2);
     })
 
-    Actions.Click(image1, () => {
-        lyd.start();
-        //GaaTil(lyd);
+    Actions.Click(yldra, () => {
+        lyd.stop();
+        GaaTil(scene2);
+    })
+
+    Actions.Click(bakgrunn, () => {
+        lyd.stop();
+        GaaTil(scene2);
     })
    
 }
@@ -123,9 +123,12 @@ function visKort(kortstokk){
     const tekst = new Blocks.Text(tekstRandom, { style: "overskrift3", x: 375, y: 600, width: 500, height: 500 });
     const image1 = new Blocks.Image("bilder/tilbake.png", { x: 25, y: 25, width: 100, height: 100 })
     Actions.Click(image1, () => {
+        lyd.stop();
         GaaTil(scene2);
+
     })
     Actions.Click(tekst, () => {
+        lyd.stop();
         GaaTil(scene2);
     })
 }
