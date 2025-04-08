@@ -15,6 +15,8 @@ const LYKKE_KORT = [
     {id:14, bilde: "bilder/lykkekort.jpg", lyd:"lydfiler/Strand14.mp3",tekst:"Blekkspruten tar en hval av deg, hvem vil du gi den til?" },
     {id:15, bilde: "bilder/lykkekort.jpg", lyd:"lydfiler/Strand15.mp3",tekst:"Den til venstre for deg får en hval!" },
     {id:16, bilde: "bilder/lykkekort.jpg", lyd:"lydfiler/Strand16.mp3",tekst:"Du har fått en livbøye, den kan du bruke til å redde en annen spiller fra havet!" },
+    {id:17, bilde: "bilder/lykkekort.jpg", lyd:"lydfiler/Strand17.mp3",tekst:"Yldra hjelper alle opp av vannet!" },
+    {id:18, bilde: "bilder/lykkekort.jpg", lyd:"lydfiler/Strand17.mp3",tekst:"Yldra hjelper alle opp av vannet!" },
 ]
 
 
